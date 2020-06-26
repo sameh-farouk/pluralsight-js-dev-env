@@ -1,7 +1,5 @@
 import {getUsers, delUser} from './api/userApi';
 
-import './bootstrap.css';
-
 getUsers().then(res => {
   const tbody = document.getElementById('users')
   res.forEach(user => {
